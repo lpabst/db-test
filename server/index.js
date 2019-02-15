@@ -15,6 +15,10 @@ massive(config.connection)
         //////////Endpoints for the front end
         app.get('/api/test', userController.test)
 
+        db.getInfo()
+            .then(res => {
+                console.log(res)
+            })
 
 
         app.listen(config.port, console.log("you are now connected on " + config.port));
