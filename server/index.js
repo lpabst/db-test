@@ -6,10 +6,10 @@ const config = require('./config.js');
 
 app.use(bodyParser.json());
 
-// massive(config.connection)
-// .then( db => {
-//   app.set('db', db);
-// })
+massive(config.connection)
+    .then(db => {
+        app.set('db', db);
+    })
 
 app.use(express.static(__dirname + './../build'))
 
