@@ -1,0 +1,9 @@
+-- create table test1(
+--   id serial primary key,
+--   text text
+-- )
+
+-- insert into test1(text)
+-- values('test3')
+
+-- select * from test1
